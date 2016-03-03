@@ -31,6 +31,34 @@ body {
   width: 240px;
 }
 
+.barnav header .navbar .cajas {
+  padding: 0px;
+}
+
+.barnav header .navbar ul.dropdown-menu {
+  background-color: #001A2F;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 0px;
+  font-size: 20px;
+}
+
+.barnav header .navbar ul.dropdown-menu li a {
+  color: white;
+}
+
+.barnav header .navbar ul.dropdown-menu li a:hover {
+  background-color: #DC019C;
+}
+
+.barnav header .navbar ul.dropdown-menu li:hover {
+  background-color: #DC019C;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
 .barnav header .navbar ul {
   margin-bottom: 0px;
 }
@@ -78,12 +106,12 @@ body {
 }
 
 .barnav header .navbar ul li:hover {
-  background-color: #00D5D5;
+  background-color: #DC019C;
   transition: background-color 0.6s linear 0.5s;
 }
 
 .barnav header .navbar ul li:hover .btn-default {
-  background-color: #00D5D5;
+  background-color: #DC019C;
   transition: background-color 0.6s linear 0.5s;
 }
 
@@ -95,16 +123,21 @@ body {
   width: 100%;
 }
 
+.carousel-indicators {
+  z-index: 0 !important;
+}
+
 #myCarousel {
   width: 100%;
 }
 
 .nosotros-background {
   background-color: #001A2F;
-  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
   padding: 40px 0px;
+}
+
+.nosotros-background .social {
+  text-align: right;
 }
 
 .nosotros-background p {
@@ -116,8 +149,8 @@ body {
 }
 
 .nosotros-background .shop-photos img {
-  border-radius: 60%;
   width: 520px;
+  margin-top: 50px;
 }
 
 .nosotros-background h1 {
@@ -129,10 +162,6 @@ body {
   font-family: 'Indie Flower', sans-serif;
   font-size: 25px;
   color: white;
-}
-
-.nosotros-background .social {
-  text-align: right;
 }
 
 .nosotros-background .fa {
@@ -172,6 +201,7 @@ body {
   transition: border-left 0.2s linear 0.2s;
   text-decoration: none;
   border-left: 4px solid white;
+  color: white;
   padding-left: 5px;
   font-size: 18px;
   color: black;
@@ -228,6 +258,7 @@ body {
   background-color: #00070C;
   height: 100px;
   color: white;
+  padding-bottom: 140px;
 }
 
 .adres-background span {
@@ -293,7 +324,6 @@ body {
   font-weight: bold;
   color: #001A2F;
   padding-bottom: 10px;
-  border-bottom: 1px dashed #505050;
 }
 
 .proyectos p {
@@ -325,7 +355,6 @@ body {
   font-weight: bold;
   color: #001A2F;
   padding-bottom: 10px;
-  border-bottom: 1px dashed #505050;
 }
 
 .nosotros p {
@@ -341,4 +370,62 @@ body {
 
 .store-img {
   margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+  .barnav header .navbar figure img {
+    width: 180px;
+    padding: 20px;
+  }
+  .navbar-default .navbar-toggle {
+    margin-top: 34px;
+  }
+  .barnav header .navbar ul li.no-drop {
+    display: block;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+  }
+  .barnav header .navbar ul li.yesdrop {
+    display: block;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+  }
+  .barnav header .navbar ul li.no-drop a {
+    font-size: 15px !important;
+  }
+  .navbar-collapse {
+    border: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .barnav header .navbar ul li.no-drop {
+    padding: 42px 10px 57px 10px;
+  }
+  .barnav header .navbar ul li.yesdrop {
+    padding: 42px 10px 50px 10px;
+  }
+  .barnav header .navbar ul li.no-drop a {
+    font-size: 15px !important;
+  }
+  .barnav header .navbar figure img {
+    width: 200px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1269px) {
+  .barnav header .navbar ul li.no-drop {
+    padding: 42px 27px 57px 25px;
+  }
+  .barnav header .navbar ul li.yesdrop {
+    padding: 42px 27px 50px 25px !important;
+  }
+  .barnav header .navbar ul li.no-drop a {
+    font-size: 15px !important;
+  }
+  .barnav header .navbar figure img {
+    width: 200px;
+    padding: 20px;
+  }
 }
