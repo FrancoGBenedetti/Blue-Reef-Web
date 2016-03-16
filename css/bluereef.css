@@ -3,10 +3,6 @@
   -webkit-box-sizing: border-box;
 }
 
-body {
-  margin-top: 120px;
-}
-
 .barnav {
   margin-bottom: 0px;
 }
@@ -238,7 +234,8 @@ body {
 }
 
 .aboutus {
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 100px;
 }
 
 .aboutus .store-img {
@@ -256,9 +253,8 @@ body {
 
 .adres-background {
   background-color: #00070C;
-  height: 100px;
   color: white;
-  padding-bottom: 140px;
+  padding: 20px;
 }
 
 .adres-background span {
@@ -305,6 +301,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  border-top: 0px !important;
   /* Set the fixed height of the footer here */
   height: 100px;
   padding: 24px 32px;
@@ -316,8 +313,8 @@ body {
 }
 
 .proyectos {
-  margin-top: 130px;
-  height: 500px;
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
 
 .proyectos h1 {
@@ -343,7 +340,7 @@ body {
 
 .nosotros {
   margin-top: 130px;
-  height: 500px;
+  margin-bottom: 100px;
 }
 
 .nosotros figure {
@@ -370,6 +367,10 @@ body {
 
 .store-img {
   margin-top: 50px;
+}
+
+.container-shop {
+  margin-top: 100px;
 }
 
 @media (max-width: 767px) {
@@ -427,5 +428,66 @@ body {
   .barnav header .navbar figure img {
     width: 200px;
     padding: 20px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 100px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  text-align: center;
+  padding: 24px 32px;
+  border-top: 1px solid #c7c7c7;
+}
+
+.footer-logo {
+  float: left;
+  width: 120px;
+}
+
+.footer-content {
+  line-height: 50px;
+}
+
+.footer-social {
+  float: right;
+}
+
+@media (max-width: 768px) {
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 200px;
+  }
+  .footer {
+    height: 200px;
+  }
+  .footer-logo, .footer-content, .footer-social {
+    margin-bottom: 16px;
+  }
+  .footer-logo {
+    display: inline-block;
+    float: none;
+    width: 120px;
+  }
+  .footer-content {
+    display: block;
+    line-height: 100%;
+  }
+  .footer-social {
+    display: block;
+    float: none;
   }
 }
