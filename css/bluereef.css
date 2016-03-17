@@ -19,16 +19,16 @@
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
+.barnav header .navbar .navbar-brand {
+  padding: 0px !important;
+}
+
 .barnav header .navbar figure {
   text-align: center;
 }
 
 .barnav header .navbar figure img {
   width: 240px;
-}
-
-.barnav header .navbar .cajas {
-  padding: 0px;
 }
 
 .barnav header .navbar ul.dropdown-menu {
@@ -64,25 +64,24 @@
   display: inline-block;
   transition: background-color 0.6s linear 0.5s;
   font-size: 15px;
-  padding: 42px 35px 43px 30px;
-  /*.btn-default:hover{
-						background-color:green;
-						transition: background-color 0.6s linear 0.5s;
-
-					}*/
+  padding: 38px 35px 40px 30px;
 }
 
 .barnav header .navbar ul li.yesdrop .btn-default {
   background-color: #001A2F;
-  border: 2px solid #001A2F;
+  border: 2px solid #DC019C;
   border-radius: 10px;
   transition: background-color 0.6s linear 0.5s;
 }
 
 .barnav header .navbar ul li.yesdrop .btn-default .shop {
   color: white;
-  font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
+}
+
+.barnav header .navbar ul li.yesdrop .btn-default:hover {
+  background-color: #DC019C;
+  transition: background-color 0.6s linear 0.5s;
 }
 
 .barnav header .navbar ul li.no-drop {
@@ -284,6 +283,10 @@
   padding-top: 5px;
 }
 
+.adres-background ul li i {
+  padding-right: 10px;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -310,6 +313,10 @@ body {
 .footer-social {
   float: right;
   vertical-align: middle;
+}
+
+.footer-social a {
+  color: white;
 }
 
 .proyectos {
@@ -397,6 +404,11 @@ body {
   .navbar-collapse {
     border: none !important;
   }
+  .barnav header .navbar figure img {
+    width: 160px;
+    padding: 10px;
+    padding-top: 5px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -412,6 +424,9 @@ body {
   .barnav header .navbar figure img {
     width: 200px;
     padding: 20px;
+  }
+  body {
+    margin-top: 70px;
   }
 }
 
@@ -470,6 +485,7 @@ body {
   body {
     /* Margin bottom by footer height */
     margin-bottom: 200px;
+    margin-top: 70px;
   }
   .footer {
     height: 200px;
